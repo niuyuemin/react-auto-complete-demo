@@ -1,22 +1,64 @@
-.App {
-  text-align: center;
+body {
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+input {
+  border: 2px solid #71ccd5;
+  border-radius: 0.4rem 0.4rem 0 0;
+  height: 60px;
+  padding: 0 11px;
+  width: 500px;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.base {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #09d3ac;
+
+
+.suggestions {
+  border: 2px solid #71ccd5;
+  border-radius: 0 0 0.4rem 0.4rem;
+  border-top-width: 0;
+  position: absolute;
+  list-style: none;
+  margin-top: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(506px + 1rem);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  text-align: center;
+  color: #aaa;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #71ccd5;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+.submit-button {
+  margin-left: 20px;
+  height: 60px;
+  border-radius: 0.4rem;
+  width: 150px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  background-color: #71ccd5;
+  border: 0;
 }
